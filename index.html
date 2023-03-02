@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <section id="games" class="d-block">
+        <header>
+            <img src="img/wraper.png" class="w-100" alt="" >
+        </header>
+        <nav class="navbar navbar-expand-lg nav-bg position-sticky z-2 top-0 col-md-6 col-lg-9 ">
+            <div class="container justify-content-between">
+                <h5 class="navbar-brand mb-0 text-uppercase">
+                    <img src="img/logo-sm.png" alt="logo photo" style="max-width: 40px"> Game Reviews
+                </h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link active text-uppercase" aria-current="page"
+                                data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <main class="container my-5 home">
+            <section class="position-relative">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData">
+                </div>
+            </section>
+        </main>
+    </section>
+    <section id="details" class="d-none" >
+        <div class="container">
+            <header class="hstack justify-content-between">
+                <h1 class="text-center h3 py-4">Details Game</h1>
+                <button class="btn-close btn-close-white" id="btnClose"></button>
+            </header>
+            <div class="row g-4" id="details-content">
+                <div class="col-md-4"><img  class="w-100" alt=""></div>
+                <div class="col-md-8">
+                    <h3></h3>
+                    <p>Category: <span class="badge rounded-pill text-bg-info Category"></span></p>
+                    <p>Platform: <span class="badge rounded-pill text-bg-info Platform"></span></p>
+                    <p>Status: <span class="badge rounded-pill text-bg-info Status"></span></p>
+                    <p class="small"></p>
+                    <a target="_blank" class="btn btn-outline-warning">Show Game</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="loding position-fixed z-3 top-0 bottom-0 start-0 end-0">
+    <span class="loader position-absolute top-50 start-50"></span>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+    
+</body>
+
+</html>
